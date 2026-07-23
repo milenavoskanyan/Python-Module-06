@@ -1,9 +1,9 @@
-from elements import create_fire
-from alchemy.elements import create_air
-from alchemy.potions import strength_potion
+from elements import create_fire # absolute import
+from ..elements import create_air # relative import (can do because its a package)
+from alchemy.potions import strength_potion # absolute import
 
 def lead_to_gold() -> str:
     return (
-        f"Recipe transmuting Lead to Gold: brew ’{create_air()}’"
-        f"and ’{strength_potion()}’ mixed with ’{create_fire()}’"
+        f"Recipe transmuting Lead to Gold: brew '{create_air()}'"
+        f" and '{strength_potion()}' mixed with '{create_fire()}'"
     )
