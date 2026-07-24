@@ -7,5 +7,6 @@ def main() -> None:
     print("Test import now - THIS WILL RAISE AN UNCAUGHT EXCEPTION")
     dark_spell_record("Fantasy", "Earth, wind and fire")
 
+
 if __name__ == "__main__":
     main()
